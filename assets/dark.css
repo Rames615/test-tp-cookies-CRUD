@@ -1,0 +1,49 @@
+body.dark-mode {
+    --color-bg: linear-gradient(135deg, #23272f 0%, #373b44 100%);
+    --color-text: #f3f4f6;
+    --color-header-bg: linear-gradient(90deg, #232526 0%, #414345 100%);
+    --color-header-text: #e0e7ff;
+    --color-section-bg: #2d3142;
+    --color-section-shadow: 0 4px 24px 0 #23272f55;
+    --color-border: #647dee;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: var(--color-header-bg);
+    color: var(--color-header-text);
+}
+
+body.dark-mode nav a {
+    color: var(--color-header-text);
+}
+
+body.dark-mode section {
+    background: var(--color-section-bg);
+    box-shadow: 0 2px 8px var(--color-section-shadow);
+}
+
+body.dark-mode h2 {
+    color: var(--color-text);
+    border-bottom: 2px solid var(--color-border);
+}
+
+body.dark-mode .cookie-modal-content {
+    background: #23272f;
+    color: #e0e7ff;
+    border-radius: 8px;
+}
+
+body.dark-mode .cookie-accept,
+body.dark-mode .cookie-refuse {
+    background: #647dee;
+    color: #fff;
+    border: none;
+}
+
+body.dark-mode .cookie-accept:hover,
+body.dark-mode .cookie-refuse:hover {
+    background: #7f53ac;
+}

@@ -8,8 +8,9 @@ const modal = {
 // Vérifier si le cookie existe déjà
 const cookieName = "cookieConsent";
 const cookieValue = getCookie(cookieName);
-if (cookieValue === "accepté") {
+if (cookieValue === "accepté" || cookieValue === "refused") {
   modal.container.style.display = "none";
+
 }
 
 // Fonction pour obtenir la valeur d'un cookie par son nom
