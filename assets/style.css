@@ -1,0 +1,77 @@
+:root {
+    --font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    --color-bg: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+    --color-text: #23272f;
+    --color-header-bg: linear-gradient(90deg, #7f53ac 0%, #647dee 100%);
+    --color-header-text: #fff;
+    --color-section-bg: #fff;
+    --color-section-shadow: 0 4px 24px 0 #647dee22;
+    --color-border: #a5b4fc;
+    --border-radius: 8px;
+    --max-width: 900px;
+    --padding-section: 30px;
+    --padding-section-mobile: 15px;
+    --padding-header: 40px 0;
+    --padding-footer: 20px 0;
+    --margin-section: 40px auto;
+    --margin-footer-top: 40px;
+    --font-weight-bold: bold;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+header {
+    background: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: var(--padding-header);
+    text-align: center;
+}
+nav a {
+    color: var(--color-header-text);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+}
+section {
+    max-width: var(--max-width);
+    margin: var(--margin-section);
+    background: var(--color-section-bg);
+    padding: var(--padding-section);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px var(--color-section-shadow);
+}
+h2 {
+    color: var(--color-text);
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 10px;
+}
+.skills-list,
+.projects-list,
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+.skills-list li,
+.projects-list li,
+.experience-list li {
+    margin-bottom: 10px;
+}
+.project-title {
+    font-weight: var(--font-weight-bold);
+}
+footer {
+    background: var(--color-header-bg);
+    color: var(--color-header-text);
+    text-align: center;
+    padding: var(--padding-footer);
+    margin-top: var(--margin-footer-top);
+}
+@media (max-width: 600px) {
+    section {
+        padding: var(--padding-section-mobile);
+    }
+}

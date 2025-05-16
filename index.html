@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/modal.css">
+    <title>Développeur - Landing Page</title>
+
+</head>
+<body>
+    <header>
+        <h1>Jean Paul TRONC</h1>
+        <p>Développeur Web Full Stack</p>
+        <nav>
+            <a href="#presentation">Présentation</a>
+            <a href="#skills">Compétences</a>
+            <a href="#experience">Expérience</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="presentation">
+        <h2>Présentation</h2>
+        <p>
+            Passionné par le développement web, je crée des applications performantes et intuitives. 
+            Fort de plusieurs années d'expérience, je maîtrise les technologies modernes pour répondre aux besoins des clients.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <ul class="skills-list">
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>React, Vue.js</li>
+            <li>Node.js, Express</li>
+            <li>PHP, Laravel</li>
+            <li>MySQL, MongoDB</li>
+            <li>Git, Docker</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Expérience</h2>
+        <ul class="experience-list">
+            <li>
+                <strong>Développeur Full Stack</strong> - TechCorp (2021 - Présent)<br>
+                Développement d'applications web sur mesure pour des clients variés.
+            </li>
+            <li>
+                <strong>Développeur Front-End</strong> - WebStudio (2019 - 2021)<br>
+                Création d'interfaces utilisateur modernes et responsives.
+            </li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2>
+        <ul class="projects-list">
+            <li>
+                <span class="project-title">Portfolio Personnel</span> - Site web présentant mes réalisations et compétences.
+            </li>
+            <li>
+                <span class="project-title">Gestionnaire de tâches</span> - Application web pour organiser et suivre les tâches quotidiennes.
+            </li>
+            <li>
+                <span class="project-title">E-commerce</span> - Développement d'une boutique en ligne avec paiement sécurisé.
+            </li>
+        </ul>
+    </section>
+
+    <footer id="contact">
+        <p>Contact : jeanpaul.tronc@email.com | © 2025 Iko Dev Test cookie</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="cookie-modal" id="cookieModal">
+        <div class="cookie-modal-content">
+            <h3>Conditions d'utilisation</h3>
+            <p>
+                Ce site utilise des cookies pour améliorer votre expérience. 
+                Acceptez-vous les conditions d'utilisation ?
+            </p>
+            <button class="cookie-accept" id="acceptCookies">Accepter</button>
+            <button class="cookie-refuse" id="refuseCookies">Refuser</button>
+        </div>
+        
+    </div>
+    <script src="/assets/app.js"></script>
+</body>
+</html>
